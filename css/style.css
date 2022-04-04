@@ -142,7 +142,7 @@ h6 {
 	height: 100vh;
 }
 .banner-overlay {
-	background:linear-gradient(to bottom, rgba(171, 47, 82, 0.10) 0%, #070046 100%);
+	background:linear-gradient(to bottom, rgba(83, 83, 83, 0) 10%, rgb(66, 84, 101) 90%);
 	padding:100px 0px 170px;
 	height: 100vh;
 }
@@ -236,6 +236,33 @@ h6 {
 	text-align: justify;
 }
 
+/* HACEMOS */
+.hacemos__titulo{
+	background: #425465;
+}
+
+/* SERVICIOS */
+.servicios{
+	background: linear-gradient(to bottom, rgba(255,255,255,0), rgb(0, 0, 0)), url(../images/servicios.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.servicios__cont-servicio{
+	background-color: #425465;
+	padding: 20px 10px;
+	height: 450px;
+}
+.servicios__cont-textos{
+	background-color: #425465;	
+}
+.servicios__titulo-principal, .servicios__titulo{
+	color: #72efe9;
+}
+.servicios__titulo{
+	font-size: 18px;
+	font-style: bold;
+}
 
 
 
