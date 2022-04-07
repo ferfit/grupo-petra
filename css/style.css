@@ -17,7 +17,7 @@ a {
 	font-family: 'Open Sans', sans-serif;
 }
 a:hover {
-	color: #1000f7 !important;
+	color: #425465 !important;
 }
 img {
 	max-width: 100%;
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
 }
-p {
+p, input, textarea {
 	line-height: 1.6;
 	font-weight: 400;
 	margin: 0;
@@ -66,6 +66,12 @@ h6 {
 }
 .py-80{
 	padding:80px 0;
+}
+.underline{
+	text-decoration:underline;
+}
+.bx-menu-alt-left{
+	font-size: 40px;
 }
 .navbar {
 	position: fixed;
@@ -142,7 +148,7 @@ h6 {
 	height: 100vh;
 }
 .banner-overlay {
-	background:linear-gradient(to bottom, rgba(83, 83, 83, 0) 10%, rgb(66, 84, 101) 90%);
+	background:linear-gradient(to bottom, rgba(83, 83, 83, 0) 10%, rgb(18, 49, 78) 90%);
 	padding:100px 0px 170px;
 	height: 100vh;
 }
@@ -166,6 +172,10 @@ h6 {
 .banner-btn:hover {
 	background: #ffffff;
 	color:#ab2f52;
+}
+.banner__titulo{
+	letter-spacing: 10px;
+	font-size: 50px;
 }
 
 @media all and (max-width:991px) {
@@ -237,8 +247,13 @@ h6 {
 }
 
 /* HACEMOS */
+.hacemos__titulo-principal{
+	text-decoration:underline;
+
+}
 .hacemos__titulo{
-	background: #425465;
+
+	background:linear-gradient(to bottom, #425465 10%, rgb(18, 49, 78) 90%);
 }
 
 /* SERVICIOS */
@@ -249,12 +264,11 @@ h6 {
 	background-repeat: no-repeat;
 }
 .servicios__cont-servicio{
-	background-color: #425465;
+	background-color: #314558;
 	padding: 20px 10px;
-	height: 450px;
 }
 .servicios__cont-textos{
-	background-color: #425465;	
+	background-color: #425465;
 }
 .servicios__titulo-principal, .servicios__titulo{
 	color: #72efe9;
@@ -263,10 +277,50 @@ h6 {
 	font-size: 18px;
 	font-style: bold;
 }
+/* CONTACTO */
+.contacto{
+	background-color: #425465;
+	position: relative;
+	margin-bottom: 50px;
+	z-index: 1;
+}
+.contacto__cont-datos{
+	background-color: rgb(22, 26, 43);
+}
+.bx-phone, .bx-map, .bx-time{
+	font-size: 20px;
+}
 
+form input, form textarea{
+	border: none;
+	border-bottom:3px solid #000;
+	outline: none;
+}
+.btn-submit{
+	border:3px solid #000;
+	outline: none;
+	width: 40%;
+	background: transparent;
+}
+.redes__cont-redes{
+	margin-left: -50px;
+}
+.redes__cont-redes a i {
+	font-size: 40px;
+	
+}
+.redes__cont-redes a:hover {
+	color: #425465 !important;
+	
+}
+.linea{
+	height: 1px;
+}
+.tuproyectoweb:hover{
+	color: #425465
+}
 
-
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) {  }
 
 @media (min-width: 768px) { 
 
@@ -280,4 +334,15 @@ h6 {
 
 @media (min-width: 1200px) { 
 
+	.formulario{
+		position:absolute ;
+		top:-100px;
+		right: 300px;
+	}
+	.contacto{
+		margin-bottom: 200px;
+	}
+	.btn-submit{
+		width: 30%;
+	}
 }
