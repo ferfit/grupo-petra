@@ -15,9 +15,8 @@
   <meta name="robots" content="index" />
   <meta name="robots" content="follow" />
   <link rel="shortcut icon" href="/favicon.ico" />
+  <meta name="author" content="tu Proyecto Web - Fernando Pereyra">
 
-  <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
- -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
 
@@ -41,10 +40,10 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <!--  <a class="navbar-brand navbar-logo" href="#"> <img src="images/logo-white.png" alt="logo" class="logo-1"> </a> -->
+      <a class="navbar-brand navbar-logo navbar-logo2" href="#"><img src="images/logoNombre.png" class="logo-1" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <i
-          class='bx bx-menu-alt-left'></i> </button>
+          class='bx bx-menu text-white'></i> </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0">Inicio</a> </li>
@@ -63,8 +62,8 @@
   <div class="banner text-center" data-scroll-index='0'>
     <div class="banner-overlay">
       <div class="container">
-        <img src="/images/logo.png" alt="" class="banner__logo wow fadeIn" data-wow-duration="2s">
-        <h1 class="text-capitalize banner__titulo wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">CREANDO
+<!--         <img src="/images/logo.png" alt="" class="banner__logo wow fadeIn" data-wow-duration="2s">
+ -->        <h1 class="text-capitalize banner__titulo wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">CREANDO
           COMUNIDADES</h1>
       </div>
     </div>
@@ -73,31 +72,49 @@
   <!-- Somos -->
 
   <section class="somos section-padding py-80" data-scroll-index='1'>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="somos__imagen wow zoomIn" data-wow-delay="500ms"> <img src="images/somos.jpg" alt="" class="" />
+        <div class="col-12 col-lg-6 rounded position-relative">
+          <div class="somos__imagen wow zoomIn rounded" data-wow-delay="500ms"> <img src="images/servicios.jpg" alt="" class=""
+              class="" />
+          </div>
+          <!-- <div class="somos__cont-titulo mx-auto px-5 shadow rounded wow fadeInRight bg-dark" data-wow-delay="500ms"
+            data-wow-duration="2s">
+            <h2 class="text-center servicios__titulo-principal">Quienes somos</h2>
+          </div> -->
+        </div>
+        <div class="col-12 col-lg-6 somos__cont-textos p-lg-5 wow fadeInUp" data-wow-duration="2s"
+          data-wow-delay="500ms">
+          <div class="p-5 shadow">
+            <h2 class="somos__titulo mb-4  text-white">Quienes Somos...</h2>
+            <p class="somos__parrafo mb-5 m-0 text-white">Somos una empresa dedicada a proveer <strong>servicios de avanzada pensados en
+                optimizar todo el proceso de gestión para edificios,
+                barrios cerrados, galerías comerciales
+                y parques industriales</strong> . Contamos con un equipo multidisciplinario de
+              profesionales que nos permite gestionar cualquier problema que pueda afectar al consorcio.
+              <strong>Atención personalizada y directa a través de Lic. en administración, con matrícula en el registro
+                público de administradores de consorcios (RPA).</strong>
+            </p>
+
+            <h3 class="somos__titulo2 mt-5 mb-4 d-md-none d-lg-block text-white">Por qué trabajar con nosotros?</h3>
+            <p class="somos__parrafo d-md-none d-lg-block text-white"><strong>Cumplimos con las normativas vigentes</strong>,
+              gestionamos
+              eficientemente los recursos, nos ocupamos de la mejora y puesta en
+              valor de tu edificio, generamos espacios de dialogo, conciliación y trabajo en equipo, <strong>visitas
+                periódicas al edificio, comunicación permanente con
+                los copropietarios, empleados y proveedores.. </strong>gestionamos comunidades felices.</p>
+
           </div>
         </div>
-        <div class="col-12 col-md-6 somos__cont-textos p-5 wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">
-          <h2 class="somos__titulo mb-4 ">Somos...</h2>
-          <p class="somos__parrafo mb-5 m-0">Una empresa dedicada a proveer <strong>servicios de avanzada pensados en
-              optimizar todo el proceso de gestión para edificios,
-              barrios cerrados, galerías comerciales
-              y parques industriales</strong> . Contamos con un equipo multidisciplinario de
-            profesionales que nos permite gestionar cualquier problema que pueda afectar al consorcio.
-            <strong>Atención personalizada y directa a través de Lic. en administración, con matrícula en el registro
-              público de administradores de consorcios (RPA).</strong>
-          </p>
+      </div>
 
-          <h3 class="somos__titulo2 mt-5 mb-4">Por qué trabajar con nosotros?</h3>
-          <p class="somos__parrafo"><strong>Cumplimos con las normativas vigentes</strong>, gestionamos
-            eficientemente los recursos, nos ocupamos de la mejora y puesta en
-            valor de tu edificio, generamos espacios de dialogo, conciliación y trabajo en equipo, <strong>visitas
-              periódicas al edificio, comunicación permanente con
-              los copropietarios, empleados y proveedores.. </strong>gestionamos comunidades felices.</p>
-
-        </div>
+      <div class="col-12 p-4 d-none d-md-block d-lg-none">
+        <h3 class="somos__titulo2 mt-5 mb-4">Por qué trabajar con nosotros?</h3>
+        <p class="somos__parrafo"><strong>Cumplimos con las normativas vigentes</strong>, gestionamos
+          eficientemente los recursos, nos ocupamos de la mejora y puesta en
+          valor de tu edificio, generamos espacios de dialogo, conciliación y trabajo en equipo, <strong>visitas
+            periódicas al edificio, comunicación permanente con
+            los copropietarios, empleados y proveedores.. </strong>gestionamos comunidades felices.</p>
       </div>
     </div>
   </section>
@@ -111,7 +128,8 @@
         hacemos??</h2>
 
       <div class="col-12 hacemos__cont-textos mt-5 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
-        <h3 class="hacemos__titulo mb-4 text-white p-2 shadow">Gestión y planificación (administrativa, financiera
+        <h3 class="hacemos__titulo mb-4 text-white p-2 shadow rounded">Gestión y planificación (administrativa,
+          financiera
           y operacional)</h3>
         <p class="hacemos__parrafo mb-5">Se realizará previamente un <strong>análisis de la situación real del
             consorcio</strong> contable, financiero, impositivo, jurídico como edilicia para poder planear una
@@ -156,9 +174,6 @@
           legislaciones vigentes que les competen a los responsables de la administración, durante su mandato o al
           consejo en el periodo de cambio de administración, hasta que se designe un nuevo administrador. <br><br>
         </p>
-        <p class=""><strong class="">APP MOVIL PARA PROPIETARIOS:</strong> ​Desde la cual podrá gestionar sus expensas,
-          pagos, reclamos, y mantenerse informado sobre lo
-          que pasa en su consorcio.</p>
 
       </div>
     </div>
@@ -167,62 +182,71 @@
 
 
   <!-- Servicios -->
-  <section class="servicios section-padding py-80 wow fadeInUp" data-scroll-index='3' data-wow-delay="500ms"
-    data-wow-duration="2s">
+  <section class="servicios section-padding py-80 wow fadeIn">
     <div class="container">
 
-      <div class="servicios__cont-textos px-3 py-4 shadow">
-        <h2 class="text-center servicios__titulo-principal">Transparencia en al gestión</h2>
+      <div class="servicios__cont-textos mx-auto px-3 py-4 shadow rounded wow fadeIn" data-wow-delay="500ms"
+        data-wow-duration="2s">
+        <h2 class="text-center servicios__titulo-principal">APP MÓVIL <i class="far fa-bullhorn"></i></h2>
         <p></p>
       </div>
 
-      <div class="row justify-content-center p-4 p-md-0">
-        <div class="col-12 col-md-5 col-lg-2 mt-5 text-white servicios__cont-servicio shadow mx-md-3">
+      <div class="row justify-content-center p-4 p-md-0 mt-5 wow fadeIn" data-wow-delay="800ms" data-wow-duration="2s">
+        <div class="col-12 col-md-5 col-lg-3 mt-3 text-white servicios__cont-servicio shadow mx-md-2 rounded">
+          <i class='bx bx-stats servicios__icono mb-2'></i>
           <h4 class="servicios__titulo mb-4 text-center">Ver y descargar Liquidación de expensas </h4>
           <p class="servicios__parrafo text-center">Comprobantes siempre en línea para su consulta, descarga e
             impresión. De fácil lectura, puede conocer la situación actual y futura del consorcio. Las expensas se
             liquidan de acuerdo a la normativa vigente (MISEXPENSAS)</p>
         </div>
-        <div class="col-12 col-md-5 col-lg-2 mt-5 text-white servicios__cont-servicio shadow mx-md-3">
+        <div class="col-12 col-md-5 col-lg-3 mt-3 text-white servicios__cont-servicio shadow mx-md-2 rounded">
+          <i class='bx bx-money-withdraw servicios__icono mb-2'></i>
           <h4 class="servicios__titulo mb-4 text-center">Botón de Pago de expensas y descarga de recibos</h4>
           <p class="servicios__parrafo text-center">Podrás pagar e informar el pago a la administración por medio de la
             App con el Botón de pago.
             También podrás consultar tu historial de pagos de forma clara y sencilla.
           </p>
         </div>
-        <div class="col-12 col-md-5 col-lg-2 mt-5 text-white servicios__cont-servicio shadow mx-md-3">
+        <div class="col-12 col-md-5 col-lg-3 mt-3 text-white servicios__cont-servicio shadow mx-md-2 rounded">
+          <i class='bx bx-notepad servicios__icono mb-2'></i>
           <h4 class="servicios__titulo mb-4 text-center">Visualización,<br> control y gestión de gastos</h4>
           <p class="servicios__parrafo text-center">Digitalización de comprobantes respaldatorios de los gastos del
             consorcio Informados en la liquidación, disponibles en la plataforma para su consulta permanente en tiempo y
             forma.</p>
         </div>
-        <div class="col-12 col-md-5 col-lg-2 mt-5 text-white servicios__cont-servicio shadow mx-md-3">
-          <h4 class="servicios__titulo mb-4 text-center">Control <br> de obra</h4><br>
+        <div class="col-12 col-md-5 col-lg-3 mt-3 text-white servicios__cont-servicio shadow mx-md-2 rounded">
+          <i class='bx bxs-devices servicios__icono mb-2'></i>
+          <h4 class="servicios__titulo mb-4 text-center">Control de obra</h4><br>
           <p class="servicios__parrafo text-center">Puede acceder a los avances y fotos de los trabajos que se realizan
             en el edificio desde cualquier dispositivo.</p>
         </div>
-        <div class="col-12 col-md-5 col-lg-2 mt-5 text-white servicios__cont-servicio shadow mx-md-3">
+        <div class="col-12 col-md-5 col-lg-3 mt-3 text-white servicios__cont-servicio shadow mx-md-2 rounded">
+          <i class='bx bx-message-dots servicios__icono mb-2'></i>
           <h4 class="servicios__titulo mb-4 text-center">Consultas, gestión y seguimientos de reclamos</h4>
           <p class="servicios__parrafo text-center">A través de la App podrán gestionar sus consultas y reclamos con la
             administración de forma privada, mejorando la comunicación y rapidez en las respuestas.
           </p>
         </div>
-        <div class="col-12 col-md-5 col-lg-2 mt-5 text-white servicios__cont-servicio shadow mx-md-3">
-          <h4 class="servicios__titulo mb-4 text-center">Ver <br> novedades </h4>
+        <div class="col-12 col-md-5 col-lg-3 mt-3 text-white servicios__cont-servicio shadow mx-md-2 rounded">
+          <i class='bx bxs-message-detail servicios__icono mb-2'></i>
+          <h4 class="servicios__titulo mb-4 text-center">Ver novedades </h4><br>
           <p class="servicios__parrafo text-center">Recibí comunicados con notificaciones al instante sobre novedades,
             vencimientos, reuniones, y todo tipo de información importante del consorcio.</p>
         </div>
-        <div class="col-12 col-md-5 col-lg-2 mt-5 text-white servicios__cont-servicio shadow mx-md-3">
+        <div class="col-12 col-md-5 col-lg-3 mt-3 text-white servicios__cont-servicio shadow mx-md-2 rounded">
+          <i class='bx bxs-like servicios__icono mb-2'></i>
           <h4 class="servicios__titulo mb-4 text-center">Gestión de votaciones</h4>
           <p class="servicios__parrafo text-center">Podrán participar de las decisiones importantes sin necesidad de
             asistirpresencialmente aumentando el indicé de participación</p>
         </div>
-        <div class="col-12 col-md-5 col-lg-2 mt-5 text-white servicios__cont-servicio shadow mx-md-3">
+        <div class="col-12 col-md-5 col-lg-3 mt-3 text-white servicios__cont-servicio shadow mx-md-2 rounded">
+          <i class='bx bxs-calendar servicios__icono mb-2'></i>
           <h4 class="servicios__titulo mb-4 text-center">Ver agenda del consorcio</h4>
           <p class="servicios__parrafo text-center">Podrán estar al tanto de los eventos más importantes del consorcio
             como inspecciones, mantenimiento o reuniones.</p>
         </div>
-        <div class="col-12 col-md-5 col-lg-2 mt-5 text-white servicios__cont-servicio shadow mx-md-3">
+        <div class="col-12 col-md-5 col-lg-3 mt-3 text-white servicios__cont-servicio shadow mx-md-2 rounded">
+          <i class='bx bxs-calendar-edit servicios__icono mb-2'></i>
           <h4 class="servicios__titulo mb-4 text-center">Reservas de amenities</h4>
           <p class="servicios__parrafo text-center">Puede realizar las reservas para el uso de amenities y áreas comunes
             (pileta, parrilla, zoom, etc) de manera autónoma desde la App.</p>
@@ -240,12 +264,9 @@
         vivimos, te invitamos a participar activamente de la misma, contribuyendo a su
         crecimiento y mejora permanente. </p>
       <h3 class="mt-3">Como? A través de… </h3>
-      <h4 class="mt-3">CAMPAÑAS,  DONACIONES, TRABAJO
-        SOCIAL, CONCIENTIZACIÓN </h4>
-      <P class="mt-3">Te invitamos a ser parte, Pedinos más info… <br><br> Si
-        necesitas <strong> asesoramiento</strong>, o un <strong>presupuesto</strong> o sos <strong>proveedor</strong> y
-        queres ofrecer tus servicios déjanos tus datos y a la
-        brevedad nos comunicaremos con vos.</P>
+      <h4 class="mt-3">CAMPAÑAS <i class='bx bxs-megaphone'></i> <i class="far fa-bullhorn"></i>,  DONACIONES <img src="images/donaciones.png" style="width: 40px;" alt="">, TRABAJO
+        SOCIAL <img src="images/trabajoSocial.png" style="width: 40px;" alt="">, CONCIENTIZACIÓN <img src="images/concientizar.png" style="width: 40px;" alt=""></h4>
+      <P class="mt-3">Te invitamos a ser parte, Pedinos <strong> más info…</strong> <br><br>
     </div>
   </div>
 
@@ -263,13 +284,13 @@
           <p class="text-white p-0 mt-3 ml-3">1 (234) 567-891</p>
 
           <div class="w-100 bg-white mt-5 linea"></div>
-          
+
           <div class="row mt-5 align-items-center ml-3">
             <i class='bx bx-time text-white mr-1'></i>
             <h4 class="text-white">HORARIOS</h4>
           </div>
           <p class="text-white p-0 mt-3 ml-3">Lun-Vie 9:00 a 17:00 </p>
-          
+
           <div class="w-100 bg-white mt-5 linea"></div>
 
           <div class="redes__cont-redes d-flex align-item-center mt-5 mx-0">
@@ -282,7 +303,13 @@
         <div class="col-12 col-md-6 col-lg-4 shadow-lg p-0 formulario wow fadeInRight" data-wow-delay="500ms"
           data-wow-duration="2s">
           <form id="formulario" class="d-flex flex-column align-item-center bg-white p-5">
-            <h2>Contáctanos...</h2>
+            <p>Si
+              necesitas <strong> asesoramiento</strong>, o un <strong>presupuesto</strong> o
+              sos <strong>proveedor</strong> y
+              queres ofrecer tus servicios déjanos tus datos y a la
+              brevedad nos comunicaremos con vos.</P>
+            </p>
+
             <label for="nombre" class="mt-4"></label>
             <input class="" type="text" id="nombre" name="nombre" placeholder="Nombre / Razón Social*" required>
             <label for="telefono" class="mt-4"></label>
@@ -300,14 +327,14 @@
 
             </div>
           </form>
-          
+
         </div>
 
       </div>
 
     </div>
   </section>
-  
+
   <!-- Footer -->
   <footer class="footer py-3">
     <div class="cotainer px-4 px-md-5">
@@ -325,7 +352,7 @@
   <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
   <!--                                                                     Whatsapp                                                                         -->
   <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
-  <a class="whatsapp position-fixed shadow" href="https://api.whatsapp.com/send?phone=5491141774133" target="_black"
+  <a class="whatsapp position-fixed shadow" href="https://api.whatsapp.com/send?phone=5491166405426" target="_black"
     id="whatsapp" aria-colspan="d-block">
     <i class='bx bxl-whatsapp whatsapp__icono'></i>
   </a>
@@ -359,13 +386,13 @@
       if (bodyScroll > 130) {
 
         navbar.addClass("nav-scroll");
-        $('.navbar-logo img').attr('src', 'images/logo-black.png');
+        $('.navbar-logo img').attr('src', 'images/logoNombre.png');
 
 
       } else {
 
         navbar.removeClass("nav-scroll");
-        $('.navbar-logo img').attr('src', 'images/logo-white.png');
+        $('.navbar-logo img').attr('src', 'images/logo.png');
 
       }
 
@@ -402,7 +429,7 @@
         topOffset: -63
       });
 
-      
+
 
     })
 
@@ -418,9 +445,9 @@
 
       });
 
-      
 
-      
+
+
 
     });
 

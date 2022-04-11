@@ -17,7 +17,7 @@ a {
 	font-family: 'Open Sans', sans-serif;
 }
 a:hover {
-	color: #425465 !important;
+	color: #fff !important;
 }
 img {
 	max-width: 100%;
@@ -67,10 +67,8 @@ h6 {
 .py-80{
 	padding:80px 0;
 }
-.underline{
-	text-decoration:underline;
-}
-.bx-menu-alt-left{
+
+.bx-menu{
 	font-size: 40px;
 }
 .navbar {
@@ -86,7 +84,7 @@ h6 {
 	z-index: 1030;
 }
 .navbar .active {
-	color: #0c007c !important;
+	color: #fff!important;
 }
 /* .navbar .navbar-brand {
 } */
@@ -112,14 +110,14 @@ h6 {
 	display: none;
 }
 .nav-scroll {
-	background: #fff;
+	background: #425465;
 	-webkit-box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.0509803922);
 	box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.0509803922);
 	-webkit-transition: all .4s ease;
 	transition: all .4s ease;
 }
 .nav-scroll .navbar-nav > li > a {
-	color: #333;
+	color: #ffff;
 }
 .nav-scroll .navbar-brand img {
 	-webkit-transform: scale(1.03) !important;
@@ -137,8 +135,15 @@ h6 {
 .nav-scroll .active {
 	position: relative;
 }
+.navbar-logo2{
+	width: 40%;
+}
+.navbar-logo2 img{
+	width: 80%;
+}
 .banner {
 	background:url(../images/bg1.jpg);
+	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -176,18 +181,19 @@ h6 {
 .banner__titulo{
 	letter-spacing: 10px;
 	font-size: 50px;
+	margin-top: 350px;
 }
 
 @media all and (max-width:991px) {
 	.navbar .navbar-collapse {
 		overflow: auto;
-		background: rgba(0, 0, 0, 0.72);
+		background: #425465;
 		color: #fff !important;
 		text-align: center;
 		padding: 10px 0;
 	}
 	.nav-scroll .navbar-collapse {
-		background: #fff !important;
+		background: #425465 !important;
 	}
 }
 @media all and (max-width:768px) {
@@ -235,20 +241,40 @@ h6 {
 }
 .somos__titulo{
 	text-align: left;
-	text-decoration:underline;
+	
+}
+.somos__cont-textos div{
+	position: relative;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	background-color: #425465;
 }
 
 .somos__titulo2{
-	text-decoration:underline;
+	
 	text-align: left;
 }
 .somos__parrafo,.somos__parrafo2{
 	text-align: justify;
 }
+.somos__cont-titulo{
+	position: absolute;
+	bottom: 20px;
+	right: 5px;
+	margin: 30px 0 0 0 ;
+	background-color: #425465;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2000;
+}
+
 
 /* HACEMOS */
 .hacemos__titulo-principal{
-	text-decoration:underline;
+	
 
 }
 .hacemos__titulo{
@@ -259,6 +285,7 @@ h6 {
 /* SERVICIOS */
 .servicios{
 	background: linear-gradient(to bottom, rgba(255,255,255,0), rgb(0, 0, 0)), url(../images/servicios.jpg);
+	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -266,9 +293,14 @@ h6 {
 .servicios__cont-servicio{
 	background-color: #314558;
 	padding: 20px 10px;
+	display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
 }
 .servicios__cont-textos{
 	background-color: #425465;
+	width: 50%;
 }
 .servicios__titulo-principal, .servicios__titulo{
 	color: #72efe9;
@@ -277,18 +309,42 @@ h6 {
 	font-size: 18px;
 	font-style: bold;
 }
+.servicios__icono{
+	font-size: 40px;
+	color: #72efe9;
+}
 /* CONTACTO */
 .contacto{
-	background-color: #425465;
+	background-image: url(../images/contacto2.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
 	position: relative;
 	margin-bottom: 50px;
 	z-index: 1;
 }
+.contacto::after{
+	content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #425465d2;
+    z-index: 2;
+}
+
 .contacto__cont-datos{
 	background-color: rgb(22, 26, 43);
+	z-index: 4000;
 }
 .bx-phone, .bx-map, .bx-time{
 	font-size: 20px;
+}
+
+.formulario{
+	z-index: 4000;
 }
 
 form input, form textarea{
@@ -330,10 +386,24 @@ form input, form textarea{
 	.banner__logo{
 		width: 50%;
 	}
+	.navbar-logo2 img{
+		width: 40%;
+	}
  }
 
 @media (min-width: 1200px) { 
 
+
+	.somos__cont-titulo{
+		right: 30px;
+	}
+	.somos__cont-textos div{
+		right: 100px;
+
+	}
+	.servicios__cont-textos{
+		width: 25%;
+	}
 	.formulario{
 		position:absolute ;
 		top:-100px;
@@ -345,4 +415,5 @@ form input, form textarea{
 	.btn-submit{
 		width: 30%;
 	}
+
 }
