@@ -313,6 +313,25 @@ h6 {
 	font-size: 40px;
 	color: #72efe9;
 }
+
+/* RESPONSABILIDAD*/
+
+.responsabilidad{
+	padding: 80px 0;
+}
+
+.responsabilidad__cont-icono{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.responsabilidad__cont-icono img{
+	width: 60px;
+}
+
+
+
 /* CONTACTO */
 .contacto{
 	background-image: url(../images/contacto2.jpg);
@@ -389,6 +408,10 @@ form input, form textarea{
 	.navbar-logo2 img{
 		width: 40%;
 	}
+	.responsabilidad{
+		padding: 120px 0;
+	}
+	
  }
 
 @media (min-width: 1200px) { 
