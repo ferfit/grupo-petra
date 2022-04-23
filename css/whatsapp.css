@@ -17,7 +17,7 @@
 
 .whatsapp__icono{
     font-size: 50px;
-    color: #425465;
+    color: var(--colorAzulOscuro);
 }
 
 .mostrarWhatsapp{

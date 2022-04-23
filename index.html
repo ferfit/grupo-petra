@@ -30,26 +30,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500:600&family=Open+Sans:wght@400;500;600;700&family=Rubik:wght@400;700;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400&display=swap"
     rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body class="position-relative">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand navbar-logo navbar-logo2" href="#"><img src="images/logoNombre.png" class="logo-1" alt=""></a>
+  <nav class="navbar navbar-expand-lg p-0">
+    <div class="container p-0">
+      <a class="navbar-brand navbar-logo navbar-logo2" href="#"><img src="images/logoNombre.png"
+          class="logo-1 logo__nav wow fadeIn" data-wow-duration="2s" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <i
           class='bx bx-menu text-white'></i> </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse p-0" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0">Inicio</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">Quienes Somos</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Qué hacemos</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Servicios</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Nuestra App</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Contacto</a> </li>
         </ul>
       </div>
@@ -59,12 +60,21 @@
 
   <!-- Banner -->
 
-  <div class="banner text-center" data-scroll-index='0'>
+  <div class="banner text-center wow rotateInDownLeft" data-wow-duration="1500ms" data-scroll-index='0'>
     <div class="banner-overlay">
-      <div class="container">
-<!--         <img src="/images/logo.png" alt="" class="banner__logo wow fadeIn" data-wow-duration="2s">
- -->        <h1 class="text-capitalize banner__titulo wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">CREANDO
-          COMUNIDADES</h1>
+      <div class="container-fluid banner__cont">
+        <h1 class="banner__titulo wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">Más que una administración, <br>
+          una comunidad.</h1>
+        <h2 class=" banner__subtitulo mt-3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1500ms">Asumimos un
+          compromiso no solo con el edificio <br> si no con las personas que habitan en él.</h2>
+        <h2 class=" banner__subtitulo subtitulo3 mt-3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1700ms">Trabajamos todos
+          los días para mejorar tu calidad de vida.</h2>
+       <!--  <h2 class=" banner__subtitulo mt-3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1900ms">Hacemos de tu
+          lugar, tu espacio, tu mundo.</h2> -->
+      </div>
+
+      <div>
+
       </div>
     </div>
   </div>
@@ -72,32 +82,36 @@
   <!-- Somos -->
 
   <section class="somos section-padding py-80" data-scroll-index='1'>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-lg-6 rounded position-relative">
-          <div class="somos__imagen wow zoomIn rounded" data-wow-delay="500ms"> <img src="images/servicios.jpg" alt="" class=""
-              class="" />
+    <div class="container-fluid p-0 m-0">
+      <div class="d-flex flex-column flex-lg-row justify-content-center somos__cont-ppal">
+        
+        <div class=" somos__cont-imagen rounded position-relative">
+          <div class="somos__imagen wow zoomIn rounded" data-wow-delay="500ms"> <img src="images/somos.jpg" alt=""
+              class="" class="" />
           </div>
           <!-- <div class="somos__cont-titulo mx-auto px-5 shadow rounded wow fadeInRight bg-dark" data-wow-delay="500ms"
             data-wow-duration="2s">
             <h2 class="text-center servicios__titulo-principal">Quienes somos</h2>
           </div> -->
         </div>
-        <div class="col-12 col-lg-6 somos__cont-textos p-lg-5 wow fadeInUp" data-wow-duration="2s"
-          data-wow-delay="500ms">
-          <div class="p-5 shadow">
+
+        <div class="somos__cont-textos wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">
+          <div class="p-4 p-md-5 shadow">
             <h2 class="somos__titulo mb-4  text-white">Quienes Somos...</h2>
-            <p class="somos__parrafo mb-5 m-0 text-white">Somos una empresa dedicada a proveer <strong>servicios de avanzada pensados en
+            <p class="somos__parrafo somos__parrafo-claro mb-5 m-0 text-white">Somos una empresa dedicada a proveer <strong>servicios de
+                avanzada pensados en
                 optimizar todo el proceso de gestión para edificios,
                 barrios cerrados, galerías comerciales
                 y parques industriales</strong> . Contamos con un equipo multidisciplinario de
               profesionales que nos permite gestionar cualquier problema que pueda afectar al consorcio.
-              <strong>Atención personalizada y planificación realizada por Lic. en administración, con matrícula en el registro
+              <strong>Atención personalizada y planificación realizada por Lic. en administración, con matrícula en el
+                registro
                 público de administradores de consorcios (RPA).</strong>
             </p>
 
-            <h3 class="somos__titulo2 mt-5 mb-4 d-md-none d-lg-block text-white">Por qué trabajar con nosotros?</h3>
-            <p class="somos__parrafo d-md-none d-lg-block text-white"><strong>Cumplimos con las normativas vigentes</strong>,
+            <h3 class="somos__titulo2 mt-5 mb-4 d-md-none d-lg-block text-white ">Por qué trabajar con nosotros?</h3>
+            <p class="somos__parrafo d-md-none d-lg-block text-white"><strong>Cumplimos con las normativas
+                vigentes</strong>,
               gestionamos
               eficientemente los recursos, nos ocupamos de la mejora y puesta en
               valor de tu edificio, generamos espacios de dialogo, conciliación y trabajo en equipo, <strong>visitas
@@ -106,6 +120,7 @@
 
           </div>
         </div>
+
       </div>
 
       <div class="col-12 p-4 d-none d-md-block d-lg-none">
@@ -124,25 +139,29 @@
   <section class="hacemos section-padding py-80" data-scroll-index='2'>
     <div class="container">
 
-      <h2 class="text-center hacemos__titulo-principal wow fadeIn" data-wow-delay="500ms" data-wow-duration="2s">¿Qué
-        hacemos?</h2>
+      <div class="d-flex justify-content-center text-align-center ">
+        <h2 class="text-center hacemos__titulo-principal d-inline wow fadeIn p-4 shadow" data-wow-delay="500ms" data-wow-duration="2s">¿Qué
+          hacemos?</h2>
+      </div>
 
       <div class="col-12 hacemos__cont-textos mt-5 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
-        <h3 class="hacemos__titulo mb-4 text-white p-2 shadow rounded">Gestión y planificación (administrativa,
+        <h3 class="hacemos__titulo mb-4 p-2 shadow-lg  mt-">Gestión y planificación (administrativa,
           financiera
           y operacional)</h3>
-        <p class="hacemos__parrafo mb-5">Se realizará previamente un <strong>análisis de la situación real del
+        <p class="hacemos__parrafo mb-5 py-5 px-3">Se realizará previamente un <strong>análisis de la situación real del
             consorcio</strong> tanto contable, financiera, impositiva, jurídica como edilicia para poder planear una
-          estrategia a futuro, se entrega en la asamblea un <strong>informe detallado</strong> con el análisis mencionado, detallando las mejoras a realizar, los recursos con los que se cuenta y los que se necesitan, a fin de poder
+          estrategia a futuro, se entrega en la asamblea un <strong>informe detallado</strong> con el análisis
+          mencionado, detallando las mejoras a realizar, los recursos con los que se cuenta y los que se necesitan, a
+          fin de poder
           <strong>establecer prioridades</strong> y de esta manera <strong>fijar objetivos a corto y largo
             plazo</strong>, se diseña un <strong>plan de acción</strong>, y se ejecuta bajo <strong>estrictos controles
             de la administración</strong>. Se les proporciona una <strong>APP Móvil</strong> a los copropietarios desde
           la cual <strong>podrán realizar un seguimiento de todo lo que pasa en el consorcio.</strong>
         </p>
 
-        <h3 class="hacemos__titulo mt-5 mb-4 text-white p-2 shadow">Auditorias contables e informes de gestión
+        <h3 class="hacemos__titulo mt-5 mb-4 p-2 shadow-lg ">Auditorias contables e informes de gestión
         </h3>
-        <p class="somos__parrafo">Las auditorias son realizadas por <strong>profesionales egresados y matriculados de
+        <p class="hacemos__parrafo py-5 px-3 mb-5">Las auditorias son realizadas por <strong>profesionales egresados y matriculados de
             ciencias
             económicas</strong> (lic. en administración o contadores) <strong>externos a la administración.El principal
             beneficio de una
@@ -156,20 +175,22 @@
             analicen los PROCEDIMIENTOS de rigor
             que SE CUMPLEN o NO en la administración del consorcio</strong>, como ser cumplimiento de las legislaciones
           vigentes,
-          cumplimiento de requisitos de contratación de proveedores, análisis de situación de trabajadores y cumplimiento
+          cumplimiento de requisitos de contratación de proveedores, análisis de situación de trabajadores y
+          cumplimiento
           de obligaciones legales, análisis de uso eficiente de recursos, cumplimiento del mantenimiento del edificio,
           inspecciones etc.
         </p>
 
-        <h3 class="hacemos__titulo mt-5 mb-4 text-white p-2 shadow">Asistencia en la administración</h3>
-        <p class="somos__parrafo"><strong>Brindamos asesoramiento y servicios</strong> a los copropietarios y al consejo
+        <h3 class="hacemos__titulo mt-5 mb-4 p-2 shadow-lg ">Asistencia en la administración</h3>
+        <p class="hacemos__parrafo py-5 px-3"><strong>Brindamos asesoramiento y servicios</strong> a los copropietarios y al consejo
           en el cambio de
           administración como así también a <strong>inmobiliarias, constructoras o administradores</strong> sobre todo
           lo concerniente a
           la administración de la propiedad horizontal. <br><br>
           Principalmente se busca salvaguardar, de las responsabilidades emergentes del Nuevo Código Civil, y de las
           legislaciones vigentes que les competen a los responsables de la administración, durante su mandato o al
-          consejo de propietarios en el período de cambio de administración, hasta que se designe un nuevo administrador. <br><br>
+          consejo de propietarios en el período de cambio de administración, hasta que se designe un nuevo
+          administrador. <br><br>
         </p>
 
       </div>
@@ -185,7 +206,7 @@
       <div class="servicios__cont-textos mx-auto px-3 py-4 shadow rounded wow fadeIn" data-wow-delay="500ms"
         data-wow-duration="2s">
         <h2 class="text-center servicios__titulo-principal">APP MÓVIL <i class="far fa-bullhorn"></i></h2>
-        <p></p>
+        <p class="text-center text-white mt-2">"Tu consorcio en tus manos"</p>
       </div>
 
       <div class="row justify-content-center p-4 p-md-0 mt-5 wow fadeIn" data-wow-delay="800ms" data-wow-duration="2s">
@@ -206,7 +227,7 @@
         </div>
         <div class="col-12 col-md-5 col-lg-3 mt-3 text-white servicios__cont-servicio shadow mx-md-2 rounded">
           <i class='bx bx-notepad servicios__icono mb-2'></i>
-          <h4 class="servicios__titulo mb-4 text-center">Visualización,<br> control y gestión de gastos</h4>
+          <h4 class="servicios__titulo mb-4 text-center"><br> Control y gestión de gastos</h4>
           <p class="servicios__parrafo text-center">Digitalización de comprobantes respaldatorios de los gastos del
             consorcio Informados en la liquidación, disponibles en la plataforma para su consulta permanente en tiempo y
             forma.</p>
@@ -260,22 +281,22 @@
       <p class="mt-4 text-justify">​Creemos como empresa que somos responsables de la sociedad en la que
         vivimos, te invitamos a participar activamente de la misma, contribuyendo a su
         crecimiento y mejora permanente. </p>
-      <h3 class="mt-3">Como? A través de… </h3>
+      <h3 class="mt-3">Como? a través de… </h3>
       <div class="row mt-3">
         <div class="col-12 col-md-6 col-lg-3 responsabilidad__cont-icono mt-3 mt-md-0">
-          <img src="images/campanas.png"  alt="">
+          <img src="images/campanas.png" alt="">
           <h4 class="mt-3">CAMPAÑAS</h4>
         </div>
         <div class="col-12 col-md-6 col-lg-3 responsabilidad__cont-icono mt-3 mt-md-0">
-          <img src="images/donaciones.png"  alt="">
+          <img src="images/donaciones.png" alt="">
           <h4 class="mt-3">DONACIONES</h4>
         </div>
         <div class="col-12 col-md-6 col-lg-3 responsabilidad__cont-icono mt-3 mt-md-0">
-          <img src="images/trabajoSocial.png"  alt="">
+          <img src="images/trabajoSocial.png" alt="">
           <h4 class="mt-3">TRABAJO SOCIAL</h4>
         </div>
         <div class="col-12 col-md-6 col-lg-3 responsabilidad__cont-icono mt-3 mt-md-0">
-          <img src="images/concientizar.png"  alt="">
+          <img src="images/concientizar.png" alt="">
           <h4 class="mt-3">CONCIENTIZACIÓN</h4>
         </div>
       </div>
@@ -287,13 +308,13 @@
   <section class="contacto py-80 px-2 px-md-0 mt-5" data-scroll-index='4'>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6 p-5 contacto__cont-datos shadow wow fadeIn" data-wow-delay="500ms"
+        <div class="col-12 col-md-6 contacto__cont-datos shadow wow fadeIn py-5" data-wow-delay="500ms"
           data-wow-duration="2s">
           <div class="row align-items-center ml-3">
             <i class='bx bx-phone text-white mr-1'></i>
             <h4 class="text-white">TÉLEFONO</h4>
           </div>
-          <p class="text-white p-0 mt-3 ml-3">1 (234) 567-891</p>
+          <p class="text-white p-0 mt-3 ml-3">11-6640-5426</p>
 
           <div class="w-100 bg-white mt-5 linea"></div>
 
@@ -393,16 +414,23 @@
       var bodyScroll = $(window).scrollTop(),
         navbar = $(".navbar");
 
+
       if (bodyScroll > 130) {
 
         navbar.addClass("nav-scroll");
         $('.navbar-logo img').attr('src', 'images/logoNombre.png');
+        $('.navbar-logo img').removeClass('fondo');
+        $('.navbar-logo img').addClass('tamaño');
+        navbar.removeClass('margen');
 
 
       } else {
 
         navbar.removeClass("nav-scroll");
         $('.navbar-logo img').attr('src', 'images/logo.png');
+        $('.navbar-logo img').addClass('fondo');
+        $('.navbar-logo img').removeClass('tamaño');
+        navbar.addClass('margen');
 
       }
 
@@ -425,6 +453,7 @@
 
         navbar.removeClass("nav-scroll");
         $('.navbar-logo img').attr('src', 'images/logo-white.png');
+
 
       }
 
